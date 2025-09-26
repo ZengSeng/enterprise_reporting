@@ -1,0 +1,12 @@
+models:
+  - name: customerrevenue
+    description: Shows customer revenue details by joining customers, orders and orderitems tables.
+    columns:
+      - name: customerid
+        description: Customer's id 
+      - name: customername
+        description: Customer's name      
+      - name: ordercount
+        description: Customer's total number of orders placed  
+      - name: revenue
+        description: Total revenue from the customer

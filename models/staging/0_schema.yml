@@ -7,26 +7,6 @@ models:
         tests:
           - string_not_empty
 
-  - name: customerrevenue
-    description: Shows customer revenue details by joining customers, orders and orderitems tables.
-    columns:
-      - name: customerid
-        description: Customer's id 
-      - name: customername
-        description: Customer's name      
-      - name: ordercount
-        description: Customer's total number of orders placed  
-      - name: revenue
-        description: Total revenue from the customer
-        
-  - name: employees_stg
-    description: Staged employees data from order management system (oms), with minor row-level transformations.  
-    columns:
-      - name: JobTitle
-        description: Employee's Job Title based on his current Roles and Responsibilities.      
-        tests:
-          - string_not_empty
-
   - name: orders_stg
     description: Staged orders data from order management system (oms), with minor row-level transformations.  
     columns:
